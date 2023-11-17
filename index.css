@@ -1,3 +1,4 @@
+/* font faces */
 @font-face {
     font-family: Manrope-Bold;
     src: url('./fonts/static/Manrope-Bold.ttf');
@@ -8,11 +9,14 @@
     src: url('./fonts/static/Manrope-Regular.ttf');
 }
 
+/* css for all */
+
 *{
     margin: 0;
     box-sizing: border-box;
 }
 
+/* body css */
 body{
     background-color: hsl(218, 23%, 16%);
     display: flex;
@@ -22,6 +26,7 @@ body{
     height: 100dvh;
 }
 
+/* css for main tag */
 main{
     display: flex;
     align-items: center;
@@ -29,6 +34,9 @@ main{
     width: 100dvw;
     height: 100dvh;
 }
+
+
+/* start card css */
 
 .card{
     background-color: hsl(217, 19%, 24%);
@@ -43,7 +51,9 @@ main{
     gap: 20px;
     position: relative;
     box-shadow: 40px 50px 100px 46px rgba(0,0,0,0.1);
+   
 }
+
 
 .card_heading{
     color: hsl(150, 100%, 66%);
@@ -87,3 +97,14 @@ main{
        transition: 1s;
     }
 }
+
+
+/* end card css */
+
+
+/* media queries */
+@media (max-width: 375px) {
+    .card{
+        max-width: 80%;
+    }
+  }
