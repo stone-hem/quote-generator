@@ -30,7 +30,11 @@
     <div class="card">
       <h3 class="card_heading">Qoute #<span id="card_quote_id">...</span></h3>
       <q class="card_quote" id="card_quote">Loading..</q>
-      <img class="card_divider" src="./images/pattern-divider-desktop.svg" alt="Icon pattern-divider-desktop">
+      <picture class="card_divider">
+        <source srcset="./images/pattern-divider-mobile.svg" media="(max-width: 375px)">
+        <source srcset="./images/pattern-divider-desktop.svg" media="(max-width: 1440px)">
+        <img class="card_divider" src="./images/pattern-divider-desktop.svg" alt="Icon pattern-divider-desktop" >
+      </picture>
       <div class="card_footer">
         <img src="./images/icon-dice.svg" height="18" width="18" alt="icon-dice">
       </div>
